@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Exploring Venezuela — tailor-made trips by Guía Travel Group",
+    "titleTemplate": "%s — Exploring Venezuela",
+    "description": "Los Roques, Angel Falls, Margarita, the Andes and Caribbean cruises. Build your trip, see an estimate and confirm it on WhatsApp with a local team."
+  },
+  "common": {
+    "planTrip": "Plan my trip",
+    "exploreDestinations": "Explore destinations",
+    "skipToContent": "Skip to content",
+    "by": "by",
+    "learnMore": "Learn more",
+    "whatsapp": "Chat on WhatsApp",
+    "verify": "To verify",
+    "placeholder": "Placeholder",
+    "video": "Video",
+    "photo": "Photo"
+  },
+  "nav": {
+    "label": "Main",
+    "destinations": "Destinations",
+    "plan": "Plan your trip",
+    "guide": "Travel guide",
+    "weddings": "Weddings",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "switchTo": "Ver en español"
+  },
+  "demo": {
+    "label": "Demo",
+    "text": "Prices and details are placeholders.",
+    "dismiss": "Dismiss"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Tailor-made travel in Venezuela",
+      "title": "Venezuela is waiting.",
+      "subtitle": "Los Roques, Angel Falls, the Andes. Trips shaped around you and looked after by a local team, from the moment you land.",
+      "caption": "Los Roques · 11°51′N 66°45′W"
+    },
+    "trust": {
+      "label": "Why travel with us",
+      "items": {
+        "local": {
+          "title": "A local team",
+          "text": "Planned and hosted by people who live here."
+        },
+        "bilingual": {
+          "title": "English & Spanish",
+          "text": "We plan and host in both."
+        },
+        "transfers": {
+          "title": "Met on arrival",
+          "text": "Airport pickup and private transfers."
+        },
+        "tailored": {
+          "title": "Made for you",
+          "text": "Built around your dates and your pace."
+        },
+        "whatsapp": {
+          "title": "Direct on WhatsApp",
+          "text": "Talk to a person, not a form."
+        }
+      }
+    },
+    "destinations": {
+      "eyebrow": "Destinations",
+      "title": "Where will you go first?",
+      "text": "Five very different ways to fall for the country. Choose one, or let us link them together.",
+      "all": "All destinations",
+      "explore": "Explore"
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "From idea to itinerary in three steps.",
+      "steps": {
+        "choose": {
+          "title": "Choose your trip",
+          "text": "Pick where you want to go and what you want to do: packages, activities, transfers."
+        },
+        "estimate": {
+          "title": "See an estimate",
+          "text": "Watch the cost take shape as you build, for your group and your dates."
+        },
+        "confirm": {
+          "title": "Confirm on WhatsApp",
+          "text": "Send us your trip in one tap. We reply with the final price and handle the rest."
+        }
+      },
+      "note": "Estimates are a guide. The exact price is confirmed on WhatsApp."
+    },
+    "guide": {
+      "eyebrow": "Travel guide",
+      "title": "Going to Venezuela? Start here.",
+      "text": "The practical answers first-time visitors ask us for, in one place.",
+      "all": "Read the guide"
+    },
+    "weddings": {
+      "eyebrow": "Weddings",
+      "title": "Say yes somewhere unforgettable.",
+      "text": "We also plan weddings and celebrations in Venezuela. Tell us what you have in mind.",
+      "cta": "About weddings"
+    },
+    "cta": {
+      "title": "You choose where. We take care of how.",
+      "text": "Build your trip in a few minutes and send it to us on WhatsApp."
+    }
+  },
+  "footer": {
+    "tagline": "Tailor-made trips across Venezuela, planned by a local team.",
+    "operated": "Operated by Guía Travel Group",
+    "explore": "Explore",
+    "company": "Company",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "demoNote": "Demo site. Prices and details are placeholders."
+  },
+  "comingSoon": {
+    "eyebrow": "In progress",
+    "text": "This page is built in the next phase of the demo.",
+    "back": "Back to home"
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "This page drifted off the map.",
+    "text": "The page you are looking for does not exist or has moved.",
+    "back": "Back to home"
+  },
+  "styleguide": {
+    "title": "Style guide"
+  }
+}

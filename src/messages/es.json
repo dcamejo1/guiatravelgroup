@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "Exploring Venezuela — viajes a tu medida con Guía Travel Group",
+    "titleTemplate": "%s — Exploring Venezuela",
+    "description": "Los Roques, el Salto Ángel, Margarita, los Andes y cruceros por el Caribe. Arma tu viaje, mira un estimado y confírmalo por WhatsApp con un equipo local."
+  },
+  "common": {
+    "planTrip": "Planifica tu viaje",
+    "exploreDestinations": "Ver destinos",
+    "skipToContent": "Ir al contenido",
+    "by": "por",
+    "learnMore": "Saber más",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "verify": "Por verificar",
+    "placeholder": "Ejemplo",
+    "video": "Video",
+    "photo": "Foto"
+  },
+  "nav": {
+    "label": "Principal",
+    "destinations": "Destinos",
+    "plan": "Planifica tu viaje",
+    "guide": "Guía de viaje",
+    "weddings": "Bodas",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "language": "Idioma",
+    "switchTo": "View in English"
+  },
+  "demo": {
+    "label": "Demo",
+    "text": "Los precios y detalles son de ejemplo.",
+    "dismiss": "Cerrar"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Viajes a tu medida en Venezuela",
+      "title": "Venezuela te espera.",
+      "subtitle": "Los Roques, el Salto Ángel, los Andes. Viajes pensados para ti y atendidos por un equipo local desde que aterrizas.",
+      "caption": "Los Roques · 11°51′N 66°45′O"
+    },
+    "trust": {
+      "label": "Por qué viajar con nosotros",
+      "items": {
+        "local": {
+          "title": "Equipo local",
+          "text": "Lo planifica y te recibe gente que vive aquí."
+        },
+        "bilingual": {
+          "title": "Español e inglés",
+          "text": "Te atendemos en los dos idiomas."
+        },
+        "transfers": {
+          "title": "Te esperamos al llegar",
+          "text": "Recogida en el aeropuerto y traslados privados."
+        },
+        "tailored": {
+          "title": "Hecho para ti",
+          "text": "A la medida de tus fechas y tu ritmo."
+        },
+        "whatsapp": {
+          "title": "Directo por WhatsApp",
+          "text": "Hablas con una persona, no con un formulario."
+        }
+      }
+    },
+    "destinations": {
+      "eyebrow": "Destinos",
+      "title": "¿Por dónde quieres empezar?",
+      "text": "Cinco maneras muy distintas de enamorarte del país. Elige una o deja que las combinemos.",
+      "all": "Todos los destinos",
+      "explore": "Descubrir"
+    },
+    "how": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la idea al itinerario en tres pasos.",
+      "steps": {
+        "choose": {
+          "title": "Elige tu viaje",
+          "text": "Decide a dónde quieres ir y qué quieres hacer: paquetes, actividades, traslados."
+        },
+        "estimate": {
+          "title": "Mira un estimado",
+          "text": "Ve cómo se arma el costo mientras eliges, según tu grupo y tus fechas."
+        },
+        "confirm": {
+          "title": "Confirma por WhatsApp",
+          "text": "Envíanos tu viaje con un toque. Te respondemos con el precio final y nos encargamos del resto."
+        }
+      },
+      "note": "Los estimados son una guía. El precio exacto se confirma por WhatsApp."
+    },
+    "guide": {
+      "eyebrow": "Guía de viaje",
+      "title": "¿Vienes a Venezuela? Empieza aquí.",
+      "text": "Las respuestas prácticas que más nos piden quienes vienen por primera vez, en un solo lugar.",
+      "all": "Leer la guía"
+    },
+    "weddings": {
+      "eyebrow": "Bodas",
+      "title": "Di que sí en un lugar inolvidable.",
+      "text": "También organizamos bodas y celebraciones en Venezuela. Cuéntanos lo que tienes en mente.",
+      "cta": "Sobre las bodas"
+    },
+    "cta": {
+      "title": "Tú eliges el destino. Nosotros, todo lo demás.",
+      "text": "Arma tu viaje en pocos minutos y envíanoslo por WhatsApp."
+    }
+  },
+  "footer": {
+    "tagline": "Viajes a tu medida por toda Venezuela, organizados por un equipo local.",
+    "operated": "Operado por Guía Travel Group",
+    "explore": "Explorar",
+    "company": "Empresa",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "rights": "Todos los derechos reservados.",
+    "demoNote": "Sitio de demostración. Los precios y detalles son de ejemplo."
+  },
+  "comingSoon": {
+    "eyebrow": "En construcción",
+    "text": "Esta página se construye en la siguiente fase de la demo.",
+    "back": "Volver al inicio"
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Esta página se salió del mapa.",
+    "text": "La página que buscas no existe o cambió de lugar.",
+    "back": "Volver al inicio"
+  },
+  "styleguide": {
+    "title": "Guía de estilo"
+  }
+}
