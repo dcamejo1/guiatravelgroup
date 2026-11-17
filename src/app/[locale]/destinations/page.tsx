@@ -5,14 +5,20 @@ import { MediaSlot } from "@/components/media/MediaSlot";
 import { Reveal } from "@/components/ui/Reveal";
 import { getDestinations } from "@/data";
 import { Link } from "@/lib/i18n/navigation";
+import { pageMetadata } from "@/lib/seo/metadata";
 import type { Locale } from "@/lib/types";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
+  const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: "destinationsPage" });
-  return { title: t("eyebrow"), description: t("text") };
+  return pageMetadata({
+    locale,
+    href: () => "/destinations",
+    title: t("eyebrow"),
+    description: t("text"),
+  });
 }
 
 export default async function DestinationsPage({ params }: Props) {

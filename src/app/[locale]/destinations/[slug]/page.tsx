@@ -15,10 +15,31 @@ import {
 } from "@/data";
 import { Link } from "@/lib/i18n/navigation";
 import { formatUsd } from "@/lib/pricing/format";
+import { breadcrumbLd, faqLd, touristDestinationLd } from "@/lib/seo/jsonld";
+import {
+  absoluteUrl,
+  localizedUrl,
+  pageMetadata,
+  type LocalizedHref,
+} from "@/lib/seo/metadata";
+import { resolveMedia } from "@/components/media/MediaSlot";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { FaqList } from "@/components/ui/FaqList";
 import { unitMessage } from "@/lib/pricing/units";
-import type { Locale } from "@/lib/types";
+import type { Destination, Locale } from "@/lib/types";
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
+
+const hrefOf =
+  (d: Destination): LocalizedHref =>
+  (l) => ({ pathname: "/destinations/[slug]", params: { slug: d.slug[l] } });
+
+/** The destination's own photo for share cards, when it has one. */
+function shareImage(d: Destination) {
+  const entry = resolveMedia(d.heroMedia);
+  const url = entry.kind === "image" ? entry.src : entry.poster;
+  return url ? { url, width: 1920, height: 1080 } : undefined;
+}
 
 export async function generateStaticParams({
   params,
@@ -33,10 +54,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
   const d = await getDestination(slug, locale as Locale);
   if (!d) return {};
-  return {
+  return pageMetadata({
+    locale: locale as Locale,
+    href: hrefOf(d),
     title: d.name[locale as Locale],
     description: d.tagline[locale as Locale],
-  };
+    image: shareImage(d),
+  });
 }
 
 export default async function DestinationPage({ params }: Props) {
@@ -57,6 +81,7 @@ export default async function DestinationPage({ params }: Props) {
   const activities = own.filter((item) => item.category === "activity");
   const kindLabels = { video: t("common.video"), image: t("common.photo") };
   const name = d.name[locale];
+  const image = shareImage(d);
 
   const price = (item: (typeof own)[number]) => {
     const unit = unitMessage(item.pricing);
@@ -75,6 +100,25 @@ export default async function DestinationPage({ params }: Props) {
   return (
     <>
       <ViewTracker id={d.id} />
+      <JsonLd
+        data={touristDestinationLd({
+          name,
+          description: d.tagline[locale],
+          url: localizedUrl(locale, hrefOf(d)),
+          image: image ? absoluteUrl(image.url) : undefined,
+        })}
+      />
+      <JsonLd
+        data={breadcrumbLd([
+          { name: t("breadcrumb.home"), url: localizedUrl(locale, () => "/") },
+          {
+            name: t("nav.destinations"),
+            url: localizedUrl(locale, () => "/destinations"),
+          },
+          { name, url: localizedUrl(locale, hrefOf(d)) },
+        ])}
+      />
+      <JsonLd data={faqLd(faqs, locale)} />
 
       <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden bg-ocean text-ivory">
         <div className="absolute inset-0 -z-20 animate-drift">
@@ -277,25 +321,11 @@ export default async function DestinationPage({ params }: Props) {
           <Reveal>
             <p className="eyebrow text-lagoon">{t("destination.faq")}</p>
           </Reveal>
-          <div className="border-t border-line">
-            {faqs.map((faq) => (
-              <details key={faq.id} className="group border-b border-line">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 font-display text-xl md:text-2xl [&::-webkit-details-marker]:hidden">
-                  {faq.question[locale]}
-                  <span
-                    aria-hidden="true"
-                    className="text-2xl font-light transition-transform duration-300 group-open:rotate-45"
-                  >
-                    +
-                  </span>
-                </summary>
-                <p className="max-w-2xl pb-7 leading-relaxed text-muted">
-                  {faq.answer[locale]}
-                  {faq.verify && <VerifyBadge label={t("common.verify")} />}
-                </p>
-              </details>
-            ))}
-          </div>
+          <FaqList
+            faqs={faqs}
+            locale={locale}
+            verifyLabel={t("common.verify")}
+          />
         </section>
       )}
 

@@ -82,8 +82,15 @@ When the agency needs to edit prices herself, replace the function bodies in `sr
 2. Add the environment variables above.
 3. Every push gets a preview URL.
 
+## SEO and AI visibility
+
+- `src/lib/seo/metadata.ts`: titles, canonical URLs, hreflang and share cards. Each page calls `pageMetadata()`.
+- `src/lib/seo/jsonld.ts`: structured data.
+- `src/app/sitemap.ts`, `src/app/robots.ts`, `src/app/llms.txt/route.ts`.
+
 ## Before going public
 
 - Replace placeholder prices, packages and guide content with verified information.
 - Get consent from anyone recognisable in photos.
-- Set `NEXT_PUBLIC_DEMO=false` and review analytics consent.
+- Set `NEXT_PUBLIC_DEMO=false` (this also removes the "To verify" badges, so do it only once the content is real) and set `NEXT_PUBLIC_SITE_URL` to the real domain.
+- Have the privacy and terms drafts reviewed, and review analytics consent.

@@ -14,19 +14,26 @@
 
 **Phase 5 — Quote builder (`/plan`).** Six steps (group, where, what, transport, extras, review), live estimate (sticky summary on desktop, bottom bar on phones), nights per destination, one package per destination, participants and quantity controls, Spanish WhatsApp message preview, Send on WhatsApp, Copy message, Start over. The draft survives a refresh (sessionStorage) and links such as `/plan?destination=los-roques&package=los-roques-package-a` merge into it.
 
-Checks: build, lint, type check and 55 unit tests are clean. Walked through in a browser in both languages at 390 and 1440 px: a two-destination trip for 4 travelers came to the expected $102, the WhatsApp link carried exactly the previewed message, the draft survived a reload, and a prefilled link added to the saved draft without wiping it.
+Builder walkthrough: walked through in a browser in both languages at 390 and 1440 px: a two-destination trip for 4 travelers came to the expected $102, the WhatsApp link carried exactly the previewed message, the draft survived a reload, and a prefilled link added to the saved draft without wiping it.
 
-## Review gate: quote builder
+**Phase 6 — Remaining pages.** Guide hub and four guide articles (outlines flagged "To verify"), about, weddings (simple, with a placeholder gallery and a WhatsApp button), contact (WhatsApp first), privacy and terms (plain-language drafts).
 
-Try the builder end to end before phase 6. Things worth an opinion: the order of the steps, the wording of the WhatsApp message, and whether the placeholder items resemble what the agency really sells.
+**Phase 7 — SEO and AI visibility.** Every page has a localized title and description, canonical URL, hreflang (en, es, x-default) and share-card tags. Structured data: TravelAgency sitewide, TouristDestination and breadcrumbs on destinations, FAQPage for confirmed answers, Article on guide pages. `/sitemap.xml` (36 URLs with language alternates), `/robots.txt` (search and AI crawlers welcome), `/llms.txt`. While `NEXT_PUBLIC_DEMO` is on, pages carry `noindex` (meta tag and `X-Robots-Tag`).
 
-## Next
+**Phase 8 — Polish and QA.**
 
-- **Phase 6:** guide, about, weddings, contact, legal.
-- **Phase 7:** SEO, hreflang, JSON-LD, sitemap, robots, `llms.txt`, analytics checks.
-- **Phase 8:** polish, QA, Vercel preview (review gate).
+- All 23 page variants load without console errors or horizontal overflow at 390, 820 and 1440 px, each with one `h1`, the right `lang`, and alt text on every image.
+- Lighthouse (mobile, production build, demo flag off): accessibility 100, best practices 100 and SEO 100 on the home page, Los Roques, the builder and the guide. Performance: home 99, guide 100, builder 82–87, Los Roques 73–83 across runs (the plan's target is 85; the low runs were on a cold image cache in a small sandbox, so re-measure on Vercel).
+- With the demo flag on, SEO scores 69 because of the intended `noindex`.
 
-Pages for phase 6 exist as "in progress" stand-ins so navigation works.
+## Not done
+
+- **Vercel preview.** Deploying creates a project in the owner's Vercel account, so it waits for a go-ahead. README has the steps.
+- **Share images** use the hero photo (or the destination's own photo) directly, not a generated card with text.
+
+## Next (after the demo)
+
+See section 16 of `PLAN.md`: real content and prices, a database with a price editor, the domain, production analytics consent.
 
 ## Decisions and deviations from the plan
 

@@ -10,6 +10,9 @@ import { Header } from "@/components/layout/Header";
 import { site } from "@/content/site";
 import { getSlugMap } from "@/data";
 import { routing } from "@/lib/i18n/routing";
+import { travelAgencyLd } from "@/lib/seo/jsonld";
+import { JsonLd } from "@/components/seo/JsonLd";
+import type { Locale } from "@/lib/types";
 import "../globals.css";
 
 const fraunces = localFont({
@@ -57,8 +60,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
-  const [t, slugMap] = await Promise.all([
+  const [t, meta, slugMap] = await Promise.all([
     getTranslations("common"),
+    getTranslations("meta"),
     getSlugMap(),
   ]);
 
@@ -68,6 +72,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       className={`${fraunces.variable} ${manrope.variable} antialiased`}
     >
       <body className="flex min-h-svh flex-col">
+        <JsonLd data={travelAgencyLd(locale as Locale, meta("description"))} />
         <NextIntlClientProvider>
           <a
             href="#main"

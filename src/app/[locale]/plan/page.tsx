@@ -3,14 +3,20 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense } from "react";
 import { TripBuilder } from "@/components/plan/TripBuilder";
 import { getCatalogItems, getDestinations } from "@/data";
+import { pageMetadata } from "@/lib/seo/metadata";
 import type { Locale } from "@/lib/types";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
+  const locale = (await params).locale as Locale;
   const t = await getTranslations({ locale, namespace: "plan" });
-  return { title: t("title"), description: t("intro") };
+  return pageMetadata({
+    locale,
+    href: () => "/plan",
+    title: t("title"),
+    description: t("intro"),
+  });
 }
 
 export default async function PlanPage({ params }: Props) {
