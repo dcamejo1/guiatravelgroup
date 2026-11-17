@@ -10,21 +10,23 @@
 
 **Phase 3 — Home.** Hero video, trust strip, destination showcase, how it works, guide teaser, weddings teaser, closing call to action. English and Spanish.
 
-Checks: `pnpm build`, `pnpm lint`, `pnpm typecheck` and `pnpm test` are clean. Checked in a browser at 390, 820 and 1440 px wide: language toggle (including `cruises` ↔ `cruceros`), root redirect order, skip link, reduced motion (videos never load), no horizontal overflow.
+**Phase 4 — Destinations.** Index page and the five destination pages from one template: hero, at a glance, highlights, sample packages, activities, FAQs. "Start with this trip" and "Add to my trip" open the builder with that choice applied.
 
-## Review gate: design
+**Phase 5 — Quote builder (`/plan`).** Six steps (group, where, what, transport, extras, review), live estimate (sticky summary on desktop, bottom bar on phones), nights per destination, one package per destination, participants and quantity controls, Spanish WhatsApp message preview, Send on WhatsApp, Copy message, Start over. The draft survives a refresh (sessionStorage) and links such as `/plan?destination=los-roques&package=los-roques-package-a` merge into it.
 
-The look set on the home page is reused by every page after it. Review it before phase 4.
+Checks: build, lint, type check and 55 unit tests are clean. Walked through in a browser in both languages at 390 and 1440 px: a two-destination trip for 4 travelers came to the expected $102, the WhatsApp link carried exactly the previewed message, the draft survived a reload, and a prefilled link added to the saved draft without wiping it.
+
+## Review gate: quote builder
+
+Try the builder end to end before phase 6. Things worth an opinion: the order of the steps, the wording of the WhatsApp message, and whether the placeholder items resemble what the agency really sells.
 
 ## Next
 
-- **Phase 4:** destinations index and the five destination pages.
-- **Phase 5:** quote builder (review gate).
 - **Phase 6:** guide, about, weddings, contact, legal.
 - **Phase 7:** SEO, hreflang, JSON-LD, sitemap, robots, `llms.txt`, analytics checks.
 - **Phase 8:** polish, QA, Vercel preview (review gate).
 
-Pages for phases 4–6 exist as "in progress" stand-ins so navigation works.
+Pages for phase 6 exist as "in progress" stand-ins so navigation works.
 
 ## Decisions and deviations from the plan
 
@@ -34,12 +36,14 @@ Pages for phases 4–6 exist as "in progress" stand-ins so navigation works.
 - **next-intl's automatic `Link` hreflang header is off.** It cannot translate slugs that differ by language. hreflang goes into page metadata in phase 7.
 - **Coral buttons use dark text.** White on coral fails AA contrast.
 - **A deeper turquoise (`lagoon`) is used for text**; the brand turquoise is too light for small text on ivory.
+- **A prefilled link opens on step 1 for a new visitor.** The choice is already in the summary; group size comes first so prices are right. Returning visitors land on the "What" step.
+- **Children count as travelers** for pricing, as the plan says. Child pricing is a later decision.
 - **PostHog uses in-memory persistence** (no cookies). Revisit consent before production.
 
 ## Needs a human
 
 - **Copy.** Headlines, trust-strip claims and destination descriptions are drafts. Confirm them with the agency.
-- **Photos with recognisable people** (the Dos Mosquises turtle photos) are in `public/media/los-roques/` for the Los Roques page and are not used on the home page. Get consent before the site is public.
+- **Photos with recognisable people** (the Dos Mosquises turtle photos) are used on the Los Roques page (not on the home page). Get consent before the site is public.
 - **Missing media.** Canaima, Margarita, Mérida, cruises and weddings show placeholders.
 - **Guide content** is outlines only, flagged to verify.
 - **Brand name.** "Exploring Venezuela" is tentative; it lives in `src/content/site.ts`.

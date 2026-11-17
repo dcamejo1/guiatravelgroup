@@ -132,5 +132,131 @@
   },
   "styleguide": {
     "title": "Guía de estilo"
+  },
+  "destinationsPage": {
+    "eyebrow": "Destinos",
+    "title": "Cinco maneras de enamorarte de Venezuela.",
+    "text": "De cayos de coral a la cascada más alta del planeta. Empieza por uno o deja que unamos varios en un solo viaje.",
+    "explore": "Descubrir {name}"
+  },
+  "destination": {
+    "atAGlance": "En resumen",
+    "highlights": "Imperdibles",
+    "packages": "Paquetes de ejemplo",
+    "packagesText": "Puntos de partida que puedes ajustar a tu grupo y tus fechas. Los precios son estimados.",
+    "activities": "Qué hacer",
+    "activitiesText": "Agrega lo que te guste. Puedes cambiar de idea en el planificador.",
+    "startWith": "Empezar con este viaje",
+    "addToTrip": "Agregar a mi viaje",
+    "includes": "Incluye",
+    "faq": "Bueno saber",
+    "ctaTitle": "¿Listo para conocer {name}?",
+    "ctaText": "Arma tu viaje en pocos minutos y envíanoslo por WhatsApp.",
+    "all": "Todos los destinos"
+  },
+  "units": {
+    "per_person": "por persona",
+    "per_group": "por grupo",
+    "per_vehicle": "por vehículo (hasta {count})",
+    "per_night": "por noche",
+    "per_night_room": "por habitación y noche (hasta {count})",
+    "per_person_per_night": "por persona y noche"
+  },
+  "plan": {
+    "title": "Planifica tu viaje",
+    "intro": "Arma tu viaje paso a paso. Verás un estimado mientras eliges y al final nos lo envías por WhatsApp.",
+    "steps": {
+      "group": "Grupo",
+      "where": "Destino",
+      "what": "Plan",
+      "transport": "Transporte",
+      "extras": "Extras",
+      "review": "Revisar"
+    },
+    "stepOf": "Paso {current} de {total}",
+    "progress": "Progreso",
+    "back": "Atrás",
+    "next": "Continuar",
+    "toReview": "Revisar mi viaje",
+    "group": {
+      "heading": "¿Quiénes viajan?",
+      "text": "Empezamos por aquí para que cada precio que veas corresponda a tu grupo.",
+      "adults": "Adultos",
+      "children": "Niños",
+      "datesHeading": "¿Cuándo?",
+      "flexible": "Mis fechas son flexibles",
+      "startDate": "Fecha de llegada",
+      "name": "Tu nombre",
+      "optional": "opcional",
+      "maxGroup": "Para grupos de más de {count}, escríbenos por WhatsApp."
+    },
+    "where": {
+      "heading": "¿A dónde quieres ir?",
+      "text": "Elige uno o más destinos y cuántas noches en cada uno.",
+      "nights": "Noches",
+      "add": "Agregar",
+      "added": "Agregado",
+      "needOne": "Elige al menos un destino para continuar."
+    },
+    "what": {
+      "heading": "¿Qué te gustaría hacer?",
+      "text": "Elige un paquete como punto de partida y suma actividades.",
+      "packages": "Paquetes",
+      "packageHint": "Uno por destino. Si eliges otro, reemplaza al anterior.",
+      "activities": "Actividades"
+    },
+    "transport": {
+      "heading": "Cómo moverte",
+      "text": "Cuéntanos qué necesitas desde que aterrizas.",
+      "secureLabel": "Sobre vehículos de seguridad",
+      "secure": "¿Buscas mayor tranquilidad? Pregúntanos por opciones de vehículos de seguridad."
+    },
+    "extras": {
+      "heading": "¿Algo más?",
+      "text": "Adicionales opcionales para todo el viaje.",
+      "notes": "Notas para nosotros",
+      "notesPlaceholder": "Celebraciones, alimentación, horarios de vuelo…"
+    },
+    "review": {
+      "heading": "Revisa tu viaje",
+      "text": "Revisa los detalles y envíanoslos por WhatsApp. Nada queda reservado hasta que confirmemos.",
+      "message": "Tu mensaje de WhatsApp",
+      "messageHint": "Podrás editarlo en WhatsApp antes de enviarlo.",
+      "send": "Enviar por WhatsApp",
+      "copy": "Copiar mensaje",
+      "copied": "Copiado",
+      "noNumber": "WhatsApp aún no está conectado. Copia el mensaje.",
+      "startOver": "Empezar de nuevo",
+      "empty": "Aún no has agregado nada. Vuelve atrás y elige lo que te gustaría."
+    },
+    "summary": {
+      "title": "Tu viaje",
+      "empty": "Aquí aparecerá lo que elijas.",
+      "total": "Total estimado",
+      "disclaimer": "Es un estimado. Elizabeth confirmará el precio exacto por WhatsApp y puede ser mayor o menor.",
+      "tripWide": "Todo el viaje",
+      "view": "Ver viaje",
+      "hide": "Ocultar",
+      "travelers": "{count, plural, one {# viajero} other {# viajeros}}",
+      "nights": "{count, plural, one {# noche} other {# noches}}",
+      "remove": "Quitar {name}",
+      "flexible": "Fechas flexibles",
+      "notAvailable": "No disponible"
+    },
+    "item": {
+      "add": "Agregar",
+      "added": "Agregado",
+      "remove": "Quitar",
+      "choose": "Elegir",
+      "chosen": "Elegido",
+      "quantity": "Cantidad",
+      "participants": "Personas que participan",
+      "forYourGroup": "{amount} para tu grupo",
+      "includes": "Incluye",
+      "unavailableMin": "Requiere al menos {count} viajeros",
+      "unavailableMax": "Para un máximo de {count} viajeros",
+      "decrease": "Reducir {label}",
+      "increase": "Aumentar {label}"
+    }
   }
 }

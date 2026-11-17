@@ -77,7 +77,7 @@ export async function Footer() {
       <div className="border-t border-ivory/15">
         <div className="shell flex flex-col gap-2 py-6 text-xs text-ivory/55 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {site.operator}. {t("footer.rights")} {t("footer.operated")}.
+            © {site.name}. {t("footer.rights")} {t("footer.operated")}.
           </p>
           {site.demo && <p>{t("footer.demoNote")}</p>}
         </div>

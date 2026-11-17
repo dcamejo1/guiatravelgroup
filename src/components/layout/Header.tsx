@@ -18,7 +18,7 @@ const NAV: { href: StaticPathname; key: string }[] = [
 ];
 
 /** Pages that open with full-bleed media, where the header starts transparent. */
-const OVER_MEDIA = new Set<string>(["/"]);
+const OVER_MEDIA = new Set<string>(["/", "/destinations/[slug]"]);
 
 export function Header({ slugMap }: { slugMap: SlugMap }) {
   const t = useTranslations();

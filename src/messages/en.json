@@ -132,5 +132,131 @@
   },
   "styleguide": {
     "title": "Style guide"
+  },
+  "destinationsPage": {
+    "eyebrow": "Destinations",
+    "title": "Five ways to fall for Venezuela.",
+    "text": "From coral cays to the tallest waterfall on Earth. Start with one, or let us link several into a single trip.",
+    "explore": "Explore {name}"
+  },
+  "destination": {
+    "atAGlance": "At a glance",
+    "highlights": "Highlights",
+    "packages": "Sample packages",
+    "packagesText": "Starting points you can adjust to your group and dates. Prices are estimates.",
+    "activities": "Things to do",
+    "activitiesText": "Add what you like. You can change your mind in the builder.",
+    "startWith": "Start with this trip",
+    "addToTrip": "Add to my trip",
+    "includes": "Includes",
+    "faq": "Good to know",
+    "ctaTitle": "Ready to see {name}?",
+    "ctaText": "Build your trip in a few minutes and send it to us on WhatsApp.",
+    "all": "All destinations"
+  },
+  "units": {
+    "per_person": "per person",
+    "per_group": "per group",
+    "per_vehicle": "per vehicle (up to {count})",
+    "per_night": "per night",
+    "per_night_room": "per room, per night (up to {count})",
+    "per_person_per_night": "per person, per night"
+  },
+  "plan": {
+    "title": "Plan your trip",
+    "intro": "Build your trip step by step. You'll see an estimate as you go and send it to us on WhatsApp at the end.",
+    "steps": {
+      "group": "Group",
+      "where": "Where",
+      "what": "What",
+      "transport": "Transport",
+      "extras": "Extras",
+      "review": "Review"
+    },
+    "stepOf": "Step {current} of {total}",
+    "progress": "Progress",
+    "back": "Back",
+    "next": "Continue",
+    "toReview": "Review my trip",
+    "group": {
+      "heading": "Who's travelling?",
+      "text": "We start here so every price you see is right for your group.",
+      "adults": "Adults",
+      "children": "Children",
+      "datesHeading": "When?",
+      "flexible": "My dates are flexible",
+      "startDate": "Arrival date",
+      "name": "Your name",
+      "optional": "optional",
+      "maxGroup": "For groups larger than {count}, message us on WhatsApp."
+    },
+    "where": {
+      "heading": "Where do you want to go?",
+      "text": "Choose one or more destinations and how many nights in each.",
+      "nights": "Nights",
+      "add": "Add",
+      "added": "Added",
+      "needOne": "Choose at least one destination to continue."
+    },
+    "what": {
+      "heading": "What would you like to do?",
+      "text": "Pick a package as your starting point, then add activities.",
+      "packages": "Packages",
+      "packageHint": "One per destination. Choosing another replaces it.",
+      "activities": "Activities"
+    },
+    "transport": {
+      "heading": "Getting around",
+      "text": "Tell us what you need from the moment you land.",
+      "secureLabel": "About secure vehicles",
+      "secure": "Need extra peace of mind? Ask us about secure vehicle options."
+    },
+    "extras": {
+      "heading": "Anything else?",
+      "text": "Optional additions for the whole trip.",
+      "notes": "Notes for us",
+      "notesPlaceholder": "Celebrations, dietary needs, flight times…"
+    },
+    "review": {
+      "heading": "Review your trip",
+      "text": "Check the details, then send them to us on WhatsApp. Nothing is booked until we confirm.",
+      "message": "Your WhatsApp message",
+      "messageHint": "Written in Spanish for our team. You can still edit it in WhatsApp before sending.",
+      "send": "Send on WhatsApp",
+      "copy": "Copy message",
+      "copied": "Copied",
+      "noNumber": "WhatsApp isn't connected yet. Copy the message instead.",
+      "startOver": "Start over",
+      "empty": "You haven't added anything yet. Go back and choose what you'd like."
+    },
+    "summary": {
+      "title": "Your trip",
+      "empty": "Your selections will appear here.",
+      "total": "Estimated total",
+      "disclaimer": "This is an estimate. Elizabeth will confirm the exact price on WhatsApp, and it may be higher or lower.",
+      "tripWide": "Whole trip",
+      "view": "View trip",
+      "hide": "Hide",
+      "travelers": "{count, plural, one {# traveler} other {# travelers}}",
+      "nights": "{count, plural, one {# night} other {# nights}}",
+      "remove": "Remove {name}",
+      "flexible": "Flexible dates",
+      "notAvailable": "Not available"
+    },
+    "item": {
+      "add": "Add",
+      "added": "Added",
+      "remove": "Remove",
+      "choose": "Choose",
+      "chosen": "Chosen",
+      "quantity": "Quantity",
+      "participants": "People taking part",
+      "forYourGroup": "{amount} for your group",
+      "includes": "Includes",
+      "unavailableMin": "Needs at least {count} travelers",
+      "unavailableMax": "For up to {count} travelers",
+      "decrease": "Decrease {label}",
+      "increase": "Increase {label}"
+    }
   }
 }

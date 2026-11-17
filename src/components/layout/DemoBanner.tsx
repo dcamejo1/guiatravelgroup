@@ -16,8 +16,9 @@ export function DemoBanner({ show }: { show: boolean }) {
   if (!show || dismissed) return null;
   return (
     <aside
+      data-demo-pill
       aria-label={`${t("label")}. ${t("text")}`}
-      className="fixed bottom-4 right-4 z-40 flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-full border border-ivory/15 bg-ocean/95 py-2 pl-4 pr-2 text-xs text-ivory shadow-lg backdrop-blur"
+      className="fixed bottom-4 right-4 z-40 max-lg:[body:has([data-bottom-bar])_&]:bottom-24 flex max-w-[calc(100vw-2rem)] items-center gap-3 rounded-full border border-ivory/15 bg-ocean/95 py-2 pl-4 pr-2 text-xs text-ivory shadow-lg backdrop-blur"
     >
       <span className="eyebrow text-turquoise">{t("label")}</span>
       <span className="hidden text-ivory/80 sm:inline">{t("text")}</span>
