@@ -222,7 +222,17 @@ export async function WeddingsTeaser({ locale }: { locale: Locale }) {
   );
 }
 
-export async function ClosingCta({ locale }: { locale: Locale }) {
+export async function ClosingCta({
+  locale,
+  title,
+  planQuery,
+}: {
+  locale: Locale;
+  /** Overrides the default headline, e.g. on destination pages. */
+  title?: string;
+  /** Prefills the builder, e.g. `{ destination: "los-roques" }`. */
+  planQuery?: Record<string, string>;
+}) {
   const t = await getTranslations();
   const whatsapp = buildWhatsAppUrl(site.whatsappNumber);
   return (
@@ -233,13 +243,16 @@ export async function ClosingCta({ locale }: { locale: Locale }) {
       <div className="absolute inset-0 -z-10 bg-ocean/45" />
       <Reveal className="shell flex min-h-[70svh] flex-col items-center justify-center py-24 text-center">
         <h2 className="display max-w-4xl text-5xl md:text-7xl">
-          {t("home.cta.title")}
+          {title ?? t("home.cta.title")}
         </h2>
         <p className="mt-6 max-w-md text-lg leading-relaxed text-ivory/90">
           {t("home.cta.text")}
         </p>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-          <ButtonLink href="/plan" size="lg">
+          <ButtonLink
+            href={planQuery ? { pathname: "/plan", query: planQuery } : "/plan"}
+            size="lg"
+          >
             {t("common.planTrip")}
           </ButtonLink>
           {whatsapp && (
