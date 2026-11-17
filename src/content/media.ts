@@ -60,6 +60,33 @@ export const media = {
     "Ceremonia de boda en una playa venezolana",
   ),
 
+  "weddings.hero": slot(
+    "image",
+    "Couple at a beach wedding in Venezuela",
+    "Pareja en una boda de playa en Venezuela",
+  ),
+  "weddings.gallery-1": slot(
+    "image",
+    "Ceremony set-up by the sea",
+    "Montaje de ceremonia junto al mar",
+  ),
+  "weddings.gallery-2": slot(
+    "image",
+    "Wedding table details",
+    "Detalles de la mesa de boda",
+  ),
+  "weddings.gallery-3": slot(
+    "image",
+    "Guests celebrating at sunset",
+    "Invitados celebrando al atardecer",
+  ),
+  "weddings.gallery-4": slot("image", "Bouquet and rings", "Ramo y anillos"),
+  "about.hero": slot(
+    "image",
+    "Elizabeth and the Guía Travel Group team",
+    "Elizabeth y el equipo de Guía Travel Group",
+  ),
+
   // Los Roques
   "los-roques.card": slot(
     "video",

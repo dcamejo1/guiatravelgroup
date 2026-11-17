@@ -119,11 +119,6 @@
     "rights": "All rights reserved.",
     "demoNote": "Demo site. Prices and details are placeholders."
   },
-  "comingSoon": {
-    "eyebrow": "In progress",
-    "text": "This page is built in the next phase of the demo.",
-    "back": "Back to home"
-  },
   "notFound": {
     "eyebrow": "404",
     "title": "This page drifted off the map.",
@@ -258,5 +253,71 @@
       "decrease": "Decrease {label}",
       "increase": "Increase {label}"
     }
+  },
+  "guidePage": {
+    "eyebrow": "Travel guide",
+    "title": "Going to Venezuela? Start here.",
+    "text": "The practical answers first-time visitors ask us for, in one place.",
+    "draftNote": "We are writing this guide with the agency. Sections marked “To verify” are not final.",
+    "faqTitle": "Common questions",
+    "read": "Read",
+    "all": "All guide articles",
+    "next": "Next",
+    "ctaTitle": "Still have questions? Ask us."
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "The people behind your trip.",
+    "intro": "Guía Travel Group is a travel agency based in Venezuela. We organise trips to Los Roques, Canaima, Margarita and Mérida, as well as cruises, private transport and weddings.",
+    "storyTitle": "Our story",
+    "storyPlaceholder": "Elizabeth's story goes here: how the agency started, what she loves about hosting travelers, and why guests come back.",
+    "whatTitle": "What we take care of",
+    "items": {
+      "trips": {
+        "title": "Your whole trip",
+        "text": "Lodging, activities and the details in between, planned around your dates."
+      },
+      "transport": {
+        "title": "Getting you there",
+        "text": "Airport pickup and private transfers, so you are never left working it out alone."
+      },
+      "weddings": {
+        "title": "Celebrations",
+        "text": "Weddings and special occasions in the places we know best."
+      }
+    }
+  },
+  "weddings": {
+    "eyebrow": "Weddings",
+    "title": "Say yes somewhere unforgettable.",
+    "intro": "We plan weddings and celebrations in Venezuela. Tell us the place and the day you imagine, and we will tell you what is possible.",
+    "detailsNote": "Details of our wedding services are coming soon.",
+    "gallery": "Gallery",
+    "cta": "Ask about weddings"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Talk to us.",
+    "text": "The fastest way to reach us is WhatsApp. Tell us what you have in mind, or build your trip first and send it with one tap.",
+    "whatsapp": "Message us on WhatsApp",
+    "noNumber": "WhatsApp isn't connected yet.",
+    "or": "Or build your trip first",
+    "hoursLabel": "Hours",
+    "hoursValue": "To be confirmed",
+    "languagesLabel": "Languages",
+    "languagesValue": "English and Spanish",
+    "basedLabel": "Based in",
+    "basedValue": "Venezuela"
+  },
+  "legal": {
+    "draft": "Draft. To be reviewed before launch."
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "error": {
+    "title": "Something went wrong.",
+    "text": "Please try again. If it keeps happening, message us on WhatsApp.",
+    "retry": "Try again"
   }
 }

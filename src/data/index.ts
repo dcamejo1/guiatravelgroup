@@ -8,6 +8,7 @@ import { catalog } from "@/content/catalog";
 import { destinations } from "@/content/destinations";
 import { faqs } from "@/content/faq";
 import { guideArticles } from "@/content/guide";
+import { legal, type LegalPage } from "@/content/legal";
 import type {
   CatalogItem,
   Destination,
@@ -89,4 +90,10 @@ export async function getSlugMap(): Promise<
     destinations: Object.fromEntries(destinations.map((d) => [d.id, d.slug])),
     guide: Object.fromEntries(guideArticles.map((a) => [a.id, a.slug])),
   };
+}
+
+export async function getLegalPage(
+  id: "privacy" | "terms",
+): Promise<LegalPage> {
+  return legal[id];
 }

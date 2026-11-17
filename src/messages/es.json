@@ -119,11 +119,6 @@
     "rights": "Todos los derechos reservados.",
     "demoNote": "Sitio de demostración. Los precios y detalles son de ejemplo."
   },
-  "comingSoon": {
-    "eyebrow": "En construcción",
-    "text": "Esta página se construye en la siguiente fase de la demo.",
-    "back": "Volver al inicio"
-  },
   "notFound": {
     "eyebrow": "404",
     "title": "Esta página se salió del mapa.",
@@ -258,5 +253,71 @@
       "decrease": "Reducir {label}",
       "increase": "Aumentar {label}"
     }
+  },
+  "guidePage": {
+    "eyebrow": "Guía de viaje",
+    "title": "¿Vienes a Venezuela? Empieza aquí.",
+    "text": "Las respuestas prácticas que más nos piden quienes vienen por primera vez, en un solo lugar.",
+    "draftNote": "Estamos escribiendo esta guía junto a la agencia. Las secciones marcadas “Por verificar” no son definitivas.",
+    "faqTitle": "Preguntas frecuentes",
+    "read": "Leer",
+    "all": "Todos los artículos",
+    "next": "Siguiente",
+    "ctaTitle": "¿Te quedan dudas? Escríbenos."
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "title": "Quiénes están detrás de tu viaje.",
+    "intro": "Guía Travel Group es una agencia de viajes con sede en Venezuela. Organizamos viajes a Los Roques, Canaima, Margarita y Mérida, además de cruceros, transporte privado y bodas.",
+    "storyTitle": "Nuestra historia",
+    "storyPlaceholder": "Aquí va la historia de Elizabeth: cómo nació la agencia, qué le gusta de recibir viajeros y por qué sus huéspedes vuelven.",
+    "whatTitle": "De qué nos encargamos",
+    "items": {
+      "trips": {
+        "title": "Tu viaje completo",
+        "text": "Alojamiento, actividades y todos los detalles, planificados según tus fechas."
+      },
+      "transport": {
+        "title": "Cómo llegar",
+        "text": "Recogida en el aeropuerto y traslados privados, para que nunca tengas que resolverlo solo."
+      },
+      "weddings": {
+        "title": "Celebraciones",
+        "text": "Bodas y ocasiones especiales en los lugares que mejor conocemos."
+      }
+    }
+  },
+  "weddings": {
+    "eyebrow": "Bodas",
+    "title": "Di que sí en un lugar inolvidable.",
+    "intro": "Organizamos bodas y celebraciones en Venezuela. Cuéntanos el lugar y el día que imaginas, y te diremos qué es posible.",
+    "detailsNote": "Pronto compartiremos los detalles de nuestros servicios para bodas.",
+    "gallery": "Galería",
+    "cta": "Consultar sobre bodas"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Hablemos.",
+    "text": "La forma más rápida de contactarnos es WhatsApp. Cuéntanos lo que tienes en mente, o arma primero tu viaje y envíalo con un toque.",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "noNumber": "WhatsApp aún no está conectado.",
+    "or": "O arma primero tu viaje",
+    "hoursLabel": "Horario",
+    "hoursValue": "Por confirmar",
+    "languagesLabel": "Idiomas",
+    "languagesValue": "Español e inglés",
+    "basedLabel": "Ubicación",
+    "basedValue": "Venezuela"
+  },
+  "legal": {
+    "draft": "Borrador. Se revisará antes del lanzamiento."
+  },
+  "breadcrumb": {
+    "home": "Inicio"
+  },
+  "error": {
+    "title": "Algo salió mal.",
+    "text": "Inténtalo de nuevo. Si sigue pasando, escríbenos por WhatsApp.",
+    "retry": "Reintentar"
   }
 }
