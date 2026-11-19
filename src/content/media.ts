@@ -128,28 +128,48 @@ export const media = {
   // Canaima
   "canaima.card": slot(
     "video",
-    "Angel Falls dropping from a tepui, Canaima",
-    "El Salto Ángel cayendo desde un tepuy, Canaima",
+    "Looking out from behind Angel Falls through the curtain of water, Canaima",
+    "Vista desde detrás del Salto Ángel, a través de la cortina de agua, Canaima",
+    {
+      src: "/media/canaima/behind-falls.mp4",
+      poster: "/media/canaima/behind-falls-poster.jpg",
+    },
   ),
   "canaima.hero": slot(
     "video",
-    "Angel Falls from the river, Canaima",
-    "El Salto Ángel desde el río, Canaima",
+    "Aerial view of Angel Falls dropping from the tepui, Canaima",
+    "Vista aérea del Salto Ángel cayendo desde el tepuy, Canaima",
+    {
+      src: "/media/canaima/aerial-falls.mp4",
+      poster: "/media/canaima/aerial-falls-poster.jpg",
+    },
   ),
   "canaima.lagoon": slot(
     "image",
-    "Canaima lagoon and its waterfalls",
-    "La laguna de Canaima y sus saltos",
+    "Waterfall at the edge of the Canaima lagoon, seen from the water",
+    "Cascada al borde de la laguna de Canaima, vista desde el agua",
+    { src: "/media/canaima/lagoon.jpg" },
   ),
   "canaima.tepuis": slot(
     "image",
-    "Tepuis rising over the savanna",
-    "Tepuyes sobre la sabana",
+    "Tepuis rising over the savanna near Canaima",
+    "Tepuyes sobre la sabana cerca de Canaima",
+    { src: "/media/canaima/tepuis.jpg" },
   ),
   "canaima.falls": slot(
     "image",
-    "Angel Falls up close",
-    "El Salto Ángel de cerca",
+    "Angel Falls seen from its base",
+    "El Salto Ángel visto desde su base",
+    { src: "/media/canaima/falls.jpg" },
+  ),
+  "canaima.river": slot(
+    "video",
+    "Boat crossing a jungle river channel on the way into Canaima",
+    "Lancha cruzando un canal de selva camino a Canaima",
+    {
+      src: "/media/canaima/river-boat.mp4",
+      poster: "/media/canaima/river-boat-poster.jpg",
+    },
   ),
 
   // Margarita
@@ -182,13 +202,21 @@ export const media = {
   // Mérida
   "merida.card": slot(
     "video",
-    "Andean peaks above Mérida",
-    "Picos andinos sobre Mérida",
+    "Stone tower built in the mountains near Mérida",
+    "Torre de piedra construida en las montañas cerca de Mérida",
+    {
+      src: "/media/merida/castle.mp4",
+      poster: "/media/merida/castle-poster.jpg",
+    },
   ),
   "merida.hero": slot(
     "video",
-    "The Andes around Mérida",
-    "Los Andes alrededor de Mérida",
+    "Stone architecture in the mountains near Mérida",
+    "Arquitectura de piedra en las montañas cerca de Mérida",
+    {
+      src: "/media/merida/castle.mp4",
+      poster: "/media/merida/castle-poster.jpg",
+    },
   ),
   "merida.cablecar": slot(
     "image",
@@ -197,13 +225,15 @@ export const media = {
   ),
   "merida.paramo": slot(
     "image",
-    "Páramo landscape with frailejones",
-    "Paisaje de páramo con frailejones",
+    "A misty lake dock at altitude near Mérida",
+    "Un muelle entre la niebla, en altura cerca de Mérida",
+    { src: "/media/merida/misty-lake.jpg" },
   ),
   "merida.town": slot(
     "image",
-    "Mountain village near Mérida",
-    "Pueblo de montaña cerca de Mérida",
+    "Stone tower near Mérida",
+    "Torre de piedra cerca de Mérida",
+    { src: "/media/merida/castle-view.jpg" },
   ),
 
   // Cruises

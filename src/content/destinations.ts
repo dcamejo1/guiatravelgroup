@@ -109,6 +109,14 @@ export const destinations: Destination[] = [
         },
         media: "canaima.tepuis",
       },
+      {
+        title: { en: "Arriving by river", es: "La llegada por el río" },
+        text: {
+          en: "There are no roads to Canaima. The last stretch in is by boat, along jungle channels that open onto the lagoon.",
+          es: "No hay carreteras hasta Canaima. El último tramo se hace en lancha, por canales de selva que desembocan en la laguna.",
+        },
+        media: "canaima.river",
+      },
     ],
     faqIds: ["what-is-included", "how-booking-works", "is-price-final"],
     heroMedia: "canaima.hero",
