@@ -20,6 +20,17 @@ const NAV: { href: StaticPathname; key: string }[] = [
 /** Pages that open with full-bleed media, where the header starts transparent. */
 const OVER_MEDIA = new Set<string>(["/", "/destinations/[slug]"]);
 
+/** Menu items fade and rise into place one after another as the panel unrolls. */
+function reveal(open: boolean) {
+  return `transition-[opacity,translate] duration-700 ease-soft ${
+    open ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0"
+  }`;
+}
+function stagger(open: boolean, index: number) {
+  // Opening waits for the panel to start unrolling; closing is immediate.
+  return { transitionDelay: open ? `${120 + index * 55}ms` : "0ms" };
+}
+
 export function Header({ slugMap }: { slugMap: SlugMap }) {
   const t = useTranslations();
   const pathname = usePathname();
@@ -125,32 +136,51 @@ export function Header({ slugMap }: { slugMap: SlugMap }) {
 
       <div
         id="mobile-menu"
-        hidden={!open}
-        className="fixed inset-x-0 bottom-0 top-18 z-45 overflow-y-auto bg-ivory lg:hidden"
+        inert={!open}
+        className={`fixed inset-x-0 bottom-0 top-18 z-45 overflow-y-auto bg-ivory transition-[clip-path,visibility] duration-700 ease-soft lg:hidden ${
+          open
+            ? "visible [clip-path:inset(0_0_0_0)]"
+            : "invisible [clip-path:inset(0_0_100%_0)]"
+        }`}
       >
         <nav
           aria-label={t("nav.label")}
           className="shell flex min-h-full flex-col pb-10 pt-6"
         >
-          <ul className="border-t border-line">
-            {[{ href: "/plan" as const, key: "plan" }, ...NAV].map((item) => (
-              <li key={item.href} className="border-b border-line">
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="display block py-5 text-3xl"
+          <div className={reveal(open)} style={stagger(open, 0)}>
+            <LanguageToggle slugMap={slugMap} variant="segmented" />
+          </div>
+          <ul className="mt-8 border-t border-line">
+            {[{ href: "/plan" as const, key: "plan" }, ...NAV].map(
+              (item, i) => (
+                <li
+                  key={item.href}
+                  className={`border-b border-line ${reveal(open)}`}
+                  style={stagger(open, i + 1)}
                 >
-                  {t(`nav.${item.key}`)}
-                </Link>
-              </li>
-            ))}
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="display block py-5 text-3xl"
+                  >
+                    {t(`nav.${item.key}`)}
+                  </Link>
+                </li>
+              ),
+            )}
           </ul>
-          <div className="mt-auto flex items-center justify-between pt-10">
-            <LanguageToggle slugMap={slugMap} />
+          <div
+            className={`mt-auto pt-10 ${reveal(open)}`}
+            style={stagger(open, NAV.length + 2)}
+          >
             <Link
               href="/plan"
               onClick={() => setOpen(false)}
-              className={buttonClasses("primary")}
+              className={buttonClasses(
+                "primary",
+                "md",
+                "w-full justify-center",
+              )}
             >
               {t("common.planTrip")}
             </Link>
